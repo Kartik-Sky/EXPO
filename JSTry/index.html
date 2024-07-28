@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div className="flex justify-center items-center h-screen flex-col">
+        <video
+          id="randi"
+          width="1500"
+          loop
+          autoPlay
+          muted
+          
+          playsInline
+          className="mb-4"
+          key={videoKey}
+          ref={videoRef} 
+        >
+          <source src={message} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <br />
+        {message}
+      </div>
+</body>
+</html>
